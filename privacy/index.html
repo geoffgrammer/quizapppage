@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – While You Wait</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-    h1 { color: #333; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — While You Wait</title>
+  <meta name="description" content="Privacy policy for While You Wait." />
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>Effective date: July 20, 2025</p>
-  <p><strong>While You Wait</strong> (“we,” “our,” or “us”) respects your privacy. This policy explains how we handle your data.</p>
-  <h2>Information We Collect</h2>
-  <p>We may collect anonymous usage data to improve the app experience. We do not collect personal information unless you provide it directly (e.g., via email).</p>
-  <h2>How We Use Information</h2>
-  <p>Data is used solely for improving app functionality and fixing bugs. We do not sell or share your data with third parties.</p>
-  <h2>Contact Us</h2>
-  <p>If you have any questions about this Privacy Policy, contact us at:
-    <a href="mailto:support@whileyouwait.com">support@whileyouwait.com</a>
-  </p>
+  <div class="container">
+    <a class="back" href="/">← Back to Home</a>
+    <h1 class="main-title">Privacy Policy</h1>
+    <p class="lead">Effective date: <span id="eff"></span></p>
+
+    <section class="card content">
+      <h2>Overview</h2>
+      <p><strong>While You Wait</strong> (“we,” “our,” “us”) respects your privacy. This policy explains what we collect, why, and your choices.</p>
+
+      <h2>Information we collect</h2>
+      <ul class="clean">
+        <li><strong>Diagnostics & analytics (if enabled):</strong> Crash logs and performance metrics used to improve stability.</li>
+        <li><strong>Support communications:</strong> If you email us, we receive your email and message content.</li>
+      </ul>
+
+      <h2>How we use information</h2>
+      <p>To operate, maintain, and improve the app; respond to support; and detect/prevent abuse. We do not sell your data.</p>
+
+      <h2>Data retention</h2>
+      <p>Diagnostic data is kept only as long as necessary for troubleshooting and improvement, then deleted or anonymized.</p>
+
+      <h2>Your choices</h2>
+      <ul class="clean">
+        <li><strong>Opt-out:</strong> You can disable analytics in iOS Settings if used (Settings → Privacy & Security → Analytics & Improvements).</li>
+        <li><strong>Access/Deletion:</strong> Email <a href="mailto:support@whileyouwait.com">support@whileyouwait.com</a> with “Privacy Request.” We’ll respond within 30 days.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>Questions? <a href="mailto:support@whileyouwait.com">support@whileyouwait.com</a></p>
+    </section>
+
+    <footer class="footer">
+      <a href="/support/">Support</a> · <a href="/">Home</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('eff').textContent = new Date().toLocaleDateString(undefined,{
+      year:'numeric', month:'long', day:'numeric'
+    });
+  </script>
 </body>
 </html>
