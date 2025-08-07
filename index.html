@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>While You Wait</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-    h1 { color: #333; }
-  </style>
+  <meta name="description" content="Play trivia with your friends!" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%236ea8fe%22/></svg>">
+  <meta property="og:title" content="While You Wait" />
+  <meta property="og:description" content="Play trivia with your friends!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/" />
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/og.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 <body>
-  <h1>Your App Name</h1>
-  <p>Welcome to the official page for <strong>While You Wait</strong>!</p>
-  <p>This app is available on the Apple App Store. Learn more below:</p>
-  <ul>
-    <li><a href="support/">Support</a></li>
-    <li><a href="privacy/">Privacy Policy</a></li>
-  </ul>
+  <div class="container">
+    <header class="nav">
+      <a class="brand" href="/">
+        <div class="logo" aria-hidden="true"></div>
+        <span>While You Wait</span>
+      </a>
+      <nav>
+        <a class="badge" href="/support/">Support</a>
+        <a class="badge" href="/privacy/">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Play trivia with your friends!</h1>
+      <p>Fast, fun rounds built for short waits and long laughs.</p>
+      <div class="cta-row">
+        <!-- Replace with your App Store product link when live -->
+        <a class="button" href="#" aria-label="View on the App Store">View on the App Store</a>
+        <a class="button secondary" href="/support/">Get help</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="grid">
+        <div class="kv">
+          <div class="dot" aria-hidden="true"></div>
+          <div>
+            <h3>Instant multiplayer</h3>
+            <p>Jump into a game with friends in seconds—no setup hassle.</p>
+          </div>
+        </div>
+        <div class="kv">
+          <div class="dot" aria-hidden="true"></div>
+          <div>
+            <h3>Smart categories</h3>
+            <p>From classics to niche topics so everyone feels like a ringer.</p>
+          </div>
+        </div>
+        <div class="kv">
+          <div class="dot" aria-hidden="true"></div>
+          <div>
+            <h3>Built for iPhone</h3>
+            <p>Snappy, accessible, and great on the go.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="y"></span> While You Wait</span> ·
+      <a href="/support/">Support</a> ·
+      <a href="/privacy/">Privacy</a>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
